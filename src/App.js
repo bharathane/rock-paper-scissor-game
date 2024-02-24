@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import RpsPage from "./components/RpsPage";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const choicesList = [
+  {
+    id: "ROCK",
+    imageUrl:
+      "https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/rock-image.png",
+  },
+  {
+    id: "SCISSORS",
+    imageUrl:
+      "https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/scissor-image.png",
+  },
+  {
+    id: "PAPER",
+    imageUrl:
+      "https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/paper-image.png",
+  },
+];
+
+const App = () => <RpsPage />;
 
 export default App;
